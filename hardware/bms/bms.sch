@@ -3678,8 +3678,6 @@ Wire Wire Line
 	10100 6350 9900 6350
 Wire Wire Line
 	9900 6350 9900 6450
-Wire Wire Line
-	10100 6000 9900 6000
 Text GLabel 10700 4450 0    50   Input ~ 0
 C1-
 $Comp
@@ -3728,17 +3726,6 @@ Wire Wire Line
 Wire Wire Line
 	10900 4450 10700 4450
 NoConn ~ 10900 3550
-$Comp
-L power:GND #PWR?
-U 1 1 5EBE5BFE
-P 9900 6000
-F 0 "#PWR?" H 9900 5750 50  0001 C CNN
-F 1 "GND" H 10000 5900 50  0000 C CNN
-F 2 "" H 9900 6000 50  0001 C CNN
-F 3 "" H 9900 6000 50  0001 C CNN
-	1    9900 6000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5EBE5F36
@@ -3836,53 +3823,53 @@ PACK ID ADC
 $Comp
 L Device:R_Small R?
 U 1 1 5F1259BA
-P 4550 8450
-F 0 "R?" H 4500 8550 50  0000 C CNN
-F 1 "300K" H 4650 8450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 8450 50  0001 C CNN
-F 3 "~" H 4550 8450 50  0001 C CNN
-	1    4550 8450
+P 6750 8300
+F 0 "R?" H 6700 8400 50  0000 C CNN
+F 1 "300K" H 6850 8300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6750 8300 50  0001 C CNN
+F 3 "~" H 6750 8300 50  0001 C CNN
+	1    6750 8300
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5F1264EC
-P 4550 8800
-F 0 "R?" H 4500 8900 50  0000 C CNN
-F 1 "20K" H 4650 8800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 8800 50  0001 C CNN
-F 3 "~" H 4550 8800 50  0001 C CNN
-	1    4550 8800
+P 6750 8650
+F 0 "R?" H 6700 8750 50  0000 C CNN
+F 1 "20K" H 6850 8650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6750 8650 50  0001 C CNN
+F 3 "~" H 6750 8650 50  0001 C CNN
+	1    6750 8650
 	-1   0    0    1   
 $EndComp
-Text GLabel 4450 8300 0    50   Input ~ 0
+Text GLabel 6650 8150 0    50   Input ~ 0
 CHG
 Wire Wire Line
-	4450 8300 4550 8300
+	6650 8150 6750 8150
 Wire Wire Line
-	4550 8300 4550 8350
+	6750 8150 6750 8200
 Wire Wire Line
-	4550 8550 4550 8650
+	6750 8400 6750 8500
 $Comp
 L power:GND #PWR?
 U 1 1 5F1AA8E9
-P 4550 9000
-F 0 "#PWR?" H 4550 8750 50  0001 C CNN
-F 1 "GND" H 4650 8900 50  0000 C CNN
-F 2 "" H 4550 9000 50  0001 C CNN
-F 3 "" H 4550 9000 50  0001 C CNN
-	1    4550 9000
+P 6750 8850
+F 0 "#PWR?" H 6750 8600 50  0001 C CNN
+F 1 "GND" H 6850 8750 50  0000 C CNN
+F 2 "" H 6750 8850 50  0001 C CNN
+F 3 "" H 6750 8850 50  0001 C CNN
+	1    6750 8850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 8900 4550 9000
-Text GLabel 4650 8650 2    50   Input ~ 0
+	6750 8750 6750 8850
+Text GLabel 6850 8500 2    50   Input ~ 0
 ADC_PWR
 Wire Wire Line
-	4650 8650 4550 8650
-Connection ~ 4550 8650
+	6850 8500 6750 8500
+Connection ~ 6750 8500
 Wire Wire Line
-	4550 8650 4550 8700
+	6750 8500 6750 8550
 Text GLabel 9250 5300 1    50   Input ~ 0
 PACK_ID
 $Comp
@@ -3944,17 +3931,6 @@ PACK_ID
 Text GLabel 8400 6350 3    50   Input ~ 0
 PWR+
 $Comp
-L power:+BATT #PWR?
-U 1 1 5F32C9B6
-P 8900 6400
-F 0 "#PWR?" H 8900 6250 50  0001 C CNN
-F 1 "+BATT" H 8900 6550 50  0000 C CNN
-F 2 "" H 8900 6400 50  0001 C CNN
-F 3 "" H 8900 6400 50  0001 C CNN
-	1    8900 6400
-	1    0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5F32C9BC
 P 9000 6250
@@ -3977,25 +3953,10 @@ Wire Wire Line
 	9100 5350 9250 5350
 Wire Wire Line
 	9250 5350 9250 5300
-$Comp
-L power:GND #PWR?
-U 1 1 5F328E25
-P 8900 5250
-F 0 "#PWR?" H 8900 5000 50  0001 C CNN
-F 1 "GND" H 8905 5077 50  0000 C CNN
-F 2 "" H 8900 5250 50  0001 C CNN
-F 3 "" H 8900 5250 50  0001 C CNN
-	1    8900 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8900 5250 8900 5400
-Text GLabel 8600 5250 1    50   Input ~ 0
-Data_H_A
 Text GLabel 8700 5250 1    50   Input ~ 0
+Data_H_A
+Text GLabel 8800 5250 1    50   Input ~ 0
 Data_L_B
-Wire Wire Line
-	8900 6200 8900 6400
 $Comp
 L Connector_Generic:Conn_01x08 J?
 U 1 1 5FC78047
@@ -4019,23 +3980,23 @@ F 3 "~" H 8800 6000 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	8600 5250 8600 5400
-Wire Wire Line
 	8700 5250 8700 5400
+Wire Wire Line
+	8800 5250 8800 5400
 Wire Wire Line
 	9000 6200 9000 6250
 Wire Wire Line
 	9100 6200 9100 6450
 Wire Wire Line
 	8400 6350 8400 6200
-Text GLabel 8600 6350 3    50   Input ~ 0
-Data_H_A
 Text GLabel 8700 6350 3    50   Input ~ 0
+Data_H_A
+Text GLabel 8800 6350 3    50   Input ~ 0
 Data_L_B
 Wire Wire Line
-	8600 6200 8600 6350
-Wire Wire Line
 	8700 6200 8700 6350
+Wire Wire Line
+	8800 6200 8800 6350
 Wire Wire Line
 	8400 5250 8400 5400
 $Comp
@@ -4067,14 +4028,14 @@ Text GLabel 1400 8450 0    50   Input ~ 0
 PWR_CTRL
 Wire Wire Line
 	1400 8450 1750 8450
-Text GLabel 8500 6350 3    50   Input ~ 0
+Text GLabel 8600 6350 3    50   Input ~ 0
 PWR_CRTL
 Wire Wire Line
-	8500 6200 8500 6350
-Text GLabel 8500 5250 1    50   Input ~ 0
+	8600 6200 8600 6350
+Text GLabel 8600 5250 1    50   Input ~ 0
 PWR_CRTL
 Wire Wire Line
-	8500 5250 8500 5400
+	8600 5250 8600 5400
 Text Notes 6900 5350 0    50   ~ 0
 PackID Jumper:\nConnect to 3.3V for the Top Pack\nConnect to GND for the Bottom Pack\nFor all other packs, keep them open
 Text GLabel 4000 4250 3    50   Input ~ 0
@@ -4407,4 +4368,16 @@ Wire Wire Line
 Connection ~ 3100 1950
 Wire Wire Line
 	3100 1950 3300 1950
+Wire Wire Line
+	8500 5250 8500 5400
+Wire Wire Line
+	8500 6350 8500 6200
+Text GLabel 8500 6350 3    50   Input ~ 0
+PWR-
+Text GLabel 8500 5250 1    50   Input ~ 0
+PWR-
+Wire Wire Line
+	10050 6000 10100 6000
+Text GLabel 10050 6000 0    50   Input ~ 0
+PWR-
 $EndSCHEMATC
