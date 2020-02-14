@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BMS:LSI94202 U?
+L bms-rescue:LSI94202-BMS U?
 U 1 1 5E42CB2D
 P 13000 5600
 F 0 "U?" H 12950 5700 50  0000 L CNN
@@ -27,7 +27,7 @@ $EndComp
 Text GLabel 3150 8150 2    50   Input ~ 0
 PWM
 Text GLabel 3150 7450 2    50   Input ~ 0
-ADC
+PACK_ID
 Text GLabel 3150 7350 2    50   Input ~ 0
 WKUP
 Text GLabel 3150 8250 2    50   Input ~ 0
@@ -59,23 +59,23 @@ U2TX
 Text GLabel 3150 7650 2    50   Input ~ 0
 U2RX
 Text GLabel 3150 7750 2    50   Input ~ 0
-GPIO1
+ADC_PWR
 Text GLabel 3150 7850 2    50   Input ~ 0
-GPIO2
+INT
 Text GLabel 3150 7950 2    50   Input ~ 0
-GPIO3
+EOC
 Text GLabel 3150 8050 2    50   Input ~ 0
-GPIO4
+SD
 Text GLabel 1400 7350 0    50   Input ~ 0
-GPIO5
+PSD
 Text GLabel 1400 8350 0    50   Input ~ 0
-GPIO10
+485_TX_EN
 Text GLabel 1400 6550 0    50   Input ~ 0
 OSC_IN
 Text GLabel 1400 6650 0    50   Input ~ 0
 OSC_OUT
 $Comp
-L BMS:TPS560430 U?
+L bms-rescue:TPS560430-BMS U?
 U 1 1 5E454D22
 P 3700 2100
 F 0 "U?" H 3700 2467 50  0000 C CNN
@@ -122,8 +122,6 @@ Text GLabel 1400 8050 0    50   Input ~ 0
 SDA
 Text GLabel 1400 7950 0    50   Input ~ 0
 SCL
-Text GLabel 1400 8450 0    50   Input ~ 0
-GPIO11
 Wire Wire Line
 	2950 7350 3150 7350
 Wire Wire Line
@@ -159,8 +157,6 @@ NoConn ~ 1750 7150
 NoConn ~ 2950 8850
 Wire Wire Line
 	1400 8350 1750 8350
-Wire Wire Line
-	1400 8450 1750 8450
 Wire Wire Line
 	1400 8550 1750 8550
 Wire Wire Line
@@ -333,7 +329,7 @@ CAN_STB
 Wire Wire Line
 	1400 6950 1750 6950
 $Comp
-L BMS:USBLC6-2SC6 U?
+L bms-rescue:USBLC6-2SC6-BMS U?
 U 1 1 5E4A89B6
 P 1700 10300
 F 0 "U?" H 1700 10766 50  0000 C CNN
@@ -785,7 +781,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 10700 4750 10600
 $Comp
-L BMS:Crystal Y?
+L bms-rescue:Crystal-BMS Y?
 U 1 1 5E60121F
 P 2850 3950
 F 0 "Y?" H 2850 4175 50  0000 C CNN
@@ -1241,12 +1237,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5E82BA39
-P 4100 8800
-F 0 "#PWR?" H 4100 8550 50  0001 C CNN
-F 1 "GND" H 4100 8650 50  0000 C CNN
-F 2 "" H 4100 8800 50  0001 C CNN
-F 3 "" H 4100 8800 50  0001 C CNN
-	1    4100 8800
+P 4300 8400
+F 0 "#PWR?" H 4300 8150 50  0001 C CNN
+F 1 "GND" H 4300 8250 50  0000 C CNN
+F 2 "" H 4300 8400 50  0001 C CNN
+F 3 "" H 4300 8400 50  0001 C CNN
+	1    4300 8400
 	1    0    0    -1  
 $EndComp
 Text GLabel 4250 7950 0    50   Input ~ 0
@@ -1265,37 +1261,6 @@ Wire Wire Line
 	4250 8150 4400 8150
 Wire Wire Line
 	4250 8250 4400 8250
-Text GLabel 4250 8350 0    50   Input ~ 0
-U2TX
-Text GLabel 4250 8450 0    50   Input ~ 0
-U2RX
-$Comp
-L Connector_Generic:Conn_01x10 J?
-U 1 1 5E8530F9
-P 4600 8250
-F 0 "J?" H 4680 8242 50  0000 L CNN
-F 1 "Conn_01x10" H 4680 8151 50  0000 L CNN
-F 2 "" H 4600 8250 50  0001 C CNN
-F 3 "~" H 4600 8250 50  0001 C CNN
-	1    4600 8250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 8800 4100 8750
-Wire Wire Line
-	4100 8750 4400 8750
-Text GLabel 4250 8550 0    50   Input ~ 0
-GPIO10
-Text GLabel 4250 8650 0    50   Input ~ 0
-GPIO11
-Wire Wire Line
-	4250 8350 4400 8350
-Wire Wire Line
-	4250 8450 4400 8450
-Wire Wire Line
-	4250 8550 4400 8550
-Wire Wire Line
-	4250 8650 4400 8650
 $Comp
 L Connector_Generic:Conn_01x05 J?
 U 1 1 5E87CBAA
@@ -1472,7 +1437,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 8150 6100 8150
 Text GLabel 5950 8050 0    50   Input ~ 0
-GPIO10
+485_TX_EN
 Wire Wire Line
 	6100 8050 6050 8050
 Wire Wire Line
@@ -1555,7 +1520,7 @@ F 3 "" H 7200 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BMS:JUMPER JP?
+L bms-rescue:JUMPER-BMS JP?
 U 1 1 5E9F8394
 P 4650 5050
 F 0 "JP?" H 4650 5314 50  0000 C CNN
@@ -1598,7 +1563,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 5050 5250 5150
 $Comp
-L BMS:Q_PMOS_GSD Q?
+L bms-rescue:Q_PMOS_GSD-BMS Q?
 U 1 1 5EA725A8
 P 8200 1350
 F 0 "Q?" H 8405 1304 50  0000 L CNN
@@ -1719,7 +1684,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 1950 8100 1900
 $Comp
-L BMS:Q_PMOS_GSD Q?
+L bms-rescue:Q_PMOS_GSD-BMS Q?
 U 1 1 5EC5A053
 P 10400 1300
 F 0 "Q?" H 10605 1254 50  0000 L CNN
@@ -1840,7 +1805,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 1900 10300 1850
 $Comp
-L BMS:Q_PMOS_GSD Q?
+L bms-rescue:Q_PMOS_GSD-BMS Q?
 U 1 1 5EC68673
 P 12500 1300
 F 0 "Q?" H 12705 1254 50  0000 L CNN
@@ -2574,7 +2539,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 14650 2850 50  00
 	-1   0    0    -1  
 $EndComp
 $Comp
-L BMS:JUMPER JP?
+L bms-rescue:JUMPER-BMS JP?
 U 1 1 5E474F4B
 P 8500 4100
 F 0 "JP?" H 8500 4100 50  0000 C CNN
@@ -2585,7 +2550,7 @@ F 3 "" H 8500 4100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BMS:JUMPER JP?
+L bms-rescue:JUMPER-BMS JP?
 U 1 1 5E475BC8
 P 8500 4300
 F 0 "JP?" H 8500 4300 50  0000 C CNN
@@ -2596,7 +2561,7 @@ F 3 "" H 8500 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BMS:JUMPER JP?
+L bms-rescue:JUMPER-BMS JP?
 U 1 1 5E4767E4
 P 8500 4500
 F 0 "JP?" H 8500 4500 50  0000 C CNN
@@ -2618,11 +2583,11 @@ Text GLabel 8100 4500 0    50   Input ~ 0
 C6
 Text GLabel 8900 4500 2    50   Input ~ 0
 C5
-Text Notes 9300 4100 0    50   ~ 0
+Text Notes 9300 4150 0    50   ~ 0
 <= 7 Cells
-Text Notes 9300 4300 0    50   ~ 0
+Text Notes 9300 4350 0    50   ~ 0
 <= 6 Cells
-Text Notes 9300 4500 0    50   ~ 0
+Text Notes 9300 4550 0    50   ~ 0
 <= 5 Cells
 Wire Wire Line
 	8100 4100 8200 4100
@@ -2647,7 +2612,7 @@ C2
 Text GLabel 8100 4700 0    50   Input ~ 0
 C3
 $Comp
-L BMS:JUMPER JP?
+L bms-rescue:JUMPER-BMS JP?
 U 1 1 5E476B2E
 P 8500 4700
 F 0 "JP?" H 8500 4700 50  0000 C CNN
@@ -2658,7 +2623,7 @@ F 3 "" H 8500 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BMS:JUMPER JP?
+L bms-rescue:JUMPER-BMS JP?
 U 1 1 5E476E99
 P 8500 4900
 F 0 "JP?" H 8500 4900 50  0000 C CNN
@@ -3369,11 +3334,11 @@ Connection ~ 12250 7800
 Wire Wire Line
 	12250 7800 12000 7800
 $Comp
-L BMS:Q_PMOS_GSD Q?
+L bms-rescue:Q_PMOS_GSD-BMS Q?
 U 1 1 5FFFA185
 P 9600 7900
-F 0 "Q?" H 9805 7854 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 9805 7945 50  0000 L CNN
+F 0 "Q?" V 9500 7800 50  0000 L CNN
+F 1 "Q_PMOS_GSD" V 9800 7600 50  0000 L CNN
 F 2 "" H 9800 8000 50  0001 C CNN
 F 3 "" H 9600 7900 50  0001 C CNN
 	1    9600 7900
@@ -3658,4 +3623,465 @@ Wire Wire Line
 	10950 7350 11100 7350
 Wire Wire Line
 	11100 7350 11100 7450
+$Comp
+L BMS:Conn_01x02 J?
+U 1 1 5E5E0CEF
+P 10800 5400
+F 0 "J?" H 10880 5392 50  0000 L CNN
+F 1 "Conn_01x02" H 10880 5301 50  0000 L CNN
+F 2 "" H 10800 5400 50  0001 C CNN
+F 3 "" H 10800 5400 50  0001 C CNN
+	1    10800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BMS:Conn_01x02 J?
+U 1 1 5E5E42AE
+P 10800 5750
+F 0 "J?" H 10880 5742 50  0000 L CNN
+F 1 "Conn_01x02" H 10880 5651 50  0000 L CNN
+F 2 "" H 10800 5750 50  0001 C CNN
+F 3 "" H 10800 5750 50  0001 C CNN
+	1    10800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L BMS:Conn_01x02 J?
+U 1 1 5E5E47F9
+P 10800 6100
+F 0 "J?" H 10880 6092 50  0000 L CNN
+F 1 "Conn_01x02" H 10880 6001 50  0000 L CNN
+F 2 "" H 10800 6100 50  0001 C CNN
+F 3 "" H 10800 6100 50  0001 C CNN
+	1    10800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E5E62C5
+P 10400 5300
+F 0 "#PWR?" H 10400 5150 50  0001 C CNN
+F 1 "+BATT" H 10400 5450 50  0000 C CNN
+F 2 "" H 10400 5300 50  0001 C CNN
+F 3 "" H 10400 5300 50  0001 C CNN
+	1    10400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5300 10400 5400
+Wire Wire Line
+	10400 5400 10600 5400
+Text GLabel 10550 5750 0    50   Input ~ 0
+PWR+
+Wire Wire Line
+	10550 5750 10600 5750
+Text GLabel 10550 6100 0    50   Input ~ 0
+LOAD
+Wire Wire Line
+	10550 6100 10600 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5E6A5F75
+P 10400 6300
+F 0 "#PWR?" H 10400 6050 50  0001 C CNN
+F 1 "GND" H 10500 6200 50  0000 C CNN
+F 2 "" H 10400 6300 50  0001 C CNN
+F 3 "" H 10400 6300 50  0001 C CNN
+	1    10400 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 5500 10400 5500
+Wire Wire Line
+	10600 6200 10400 6200
+Wire Wire Line
+	10400 6200 10400 6300
+Wire Wire Line
+	10600 5850 10400 5850
+Text GLabel 10500 4900 0    50   Input ~ 0
+C1-
+$Comp
+L Connector_Generic:Conn_01x10 J?
+U 1 1 5E86EE3B
+P 10900 4500
+F 0 "J?" H 10980 4492 50  0000 L CNN
+F 1 "Conn_01x10" H 10980 4401 50  0000 L CNN
+F 2 "" H 10900 4500 50  0001 C CNN
+F 3 "~" H 10900 4500 50  0001 C CNN
+	1    10900 4500
+	1    0    0    1   
+$EndComp
+Text GLabel 10500 4800 0    50   Input ~ 0
+C1
+Text GLabel 10500 4700 0    50   Input ~ 0
+C2
+Text GLabel 10500 4600 0    50   Input ~ 0
+C3
+Text GLabel 10500 4500 0    50   Input ~ 0
+C4
+Text GLabel 10500 4400 0    50   Input ~ 0
+C5
+Text GLabel 10500 4300 0    50   Input ~ 0
+C6
+Text GLabel 10500 4200 0    50   Input ~ 0
+C7
+Text GLabel 10500 4100 0    50   Input ~ 0
+C8
+Wire Wire Line
+	10500 4100 10700 4100
+Wire Wire Line
+	10700 4200 10500 4200
+Wire Wire Line
+	10700 4300 10500 4300
+Wire Wire Line
+	10700 4400 10500 4400
+Wire Wire Line
+	10700 4500 10500 4500
+Wire Wire Line
+	10700 4600 10500 4600
+Wire Wire Line
+	10700 4700 10500 4700
+Wire Wire Line
+	10700 4800 10500 4800
+Wire Wire Line
+	10700 4900 10500 4900
+NoConn ~ 10700 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5EBE5BFE
+P 10400 5850
+F 0 "#PWR?" H 10400 5600 50  0001 C CNN
+F 1 "GND" H 10500 5750 50  0000 C CNN
+F 2 "" H 10400 5850 50  0001 C CNN
+F 3 "" H 10400 5850 50  0001 C CNN
+	1    10400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBE5F36
+P 10400 5500
+F 0 "#PWR?" H 10400 5250 50  0001 C CNN
+F 1 "GND" H 10500 5400 50  0000 C CNN
+F 2 "" H 10400 5500 50  0001 C CNN
+F 3 "" H 10400 5500 50  0001 C CNN
+	1    10400 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L BMS:Conn_01x06 J?
+U 1 1 5ECFBFB2
+P 4600 8050
+F 0 "J?" H 4680 8042 50  0000 L CNN
+F 1 "Conn_01x06" H 4680 7951 50  0000 L CNN
+F 2 "" H 4600 8050 50  0001 C CNN
+F 3 "" H 4600 8050 50  0001 C CNN
+	1    4600 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 8350 4300 8350
+Wire Wire Line
+	4300 8350 4300 8400
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5ED4454A
+P 4650 8850
+F 0 "J?" H 4730 8842 50  0000 L CNN
+F 1 "Conn_01x04" H 4730 8751 50  0000 L CNN
+F 2 "" H 4650 8850 50  0001 C CNN
+F 3 "~" H 4650 8850 50  0001 C CNN
+	1    4650 8850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1750 8450
+Text GLabel 4350 8750 0    50   Input ~ 0
+GPIO6
+Text GLabel 4350 8850 0    50   Input ~ 0
+GPIO7
+Text GLabel 4350 8950 0    50   Input ~ 0
+GPIO8
+Text GLabel 4350 9050 0    50   Input ~ 0
+GPIO9
+Wire Wire Line
+	4350 8750 4450 8750
+Wire Wire Line
+	4450 8850 4350 8850
+Wire Wire Line
+	4350 8950 4450 8950
+Wire Wire Line
+	4450 9050 4350 9050
+$Comp
+L BMS:JUMPER3 JP?
+U 1 1 5EFC79E7
+P 6300 3800
+F 0 "JP?" H 6300 4039 50  0000 C CNN
+F 1 "JUMPER3" H 6300 3948 50  0000 C CNN
+F 2 "" H 6300 3800 50  0000 C CNN
+F 3 "" H 6300 3800 50  0000 C CNN
+	1    6300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EFCD827
+P 5950 3750
+F 0 "#PWR?" H 5950 3600 50  0001 C CNN
+F 1 "+3.3V" H 5965 3923 50  0000 C CNN
+F 2 "" H 5950 3750 50  0001 C CNN
+F 3 "" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFCDD18
+P 6650 3850
+F 0 "#PWR?" H 6650 3600 50  0001 C CNN
+F 1 "GND" H 6655 3677 50  0000 C CNN
+F 2 "" H 6650 3850 50  0001 C CNN
+F 3 "" H 6650 3850 50  0001 C CNN
+	1    6650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3750 5950 3800
+Wire Wire Line
+	5950 3800 6050 3800
+Wire Wire Line
+	6550 3800 6650 3800
+Wire Wire Line
+	6650 3800 6650 3850
+$Comp
+L Device:R_Small R?
+U 1 1 5F0517DB
+P 6300 4050
+F 0 "R?" H 6241 4004 50  0000 R CNN
+F 1 "2K2" H 6241 4095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6300 4050 50  0001 C CNN
+F 3 "~" H 6300 4050 50  0001 C CNN
+	1    6300 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3900 6300 3950
+Text GLabel 6300 4250 3    50   Input ~ 0
+PACK_ID
+Wire Wire Line
+	6300 4250 6300 4150
+Text Notes 3500 7500 0    50   ~ 0
+PACK ID ADC 
+$Comp
+L Device:R_Small R?
+U 1 1 5F1259BA
+P 9500 6800
+F 0 "R?" H 9450 6900 50  0000 C CNN
+F 1 "300K" H 9600 6800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9500 6800 50  0001 C CNN
+F 3 "~" H 9500 6800 50  0001 C CNN
+	1    9500 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F1264EC
+P 9500 7150
+F 0 "R?" H 9450 7250 50  0000 C CNN
+F 1 "20K" H 9600 7150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9500 7150 50  0001 C CNN
+F 3 "~" H 9500 7150 50  0001 C CNN
+	1    9500 7150
+	-1   0    0    1   
+$EndComp
+Text GLabel 9400 6650 0    50   Input ~ 0
+CHG
+Wire Wire Line
+	9400 6650 9500 6650
+Wire Wire Line
+	9500 6650 9500 6700
+Wire Wire Line
+	9500 6900 9500 7000
+$Comp
+L power:GND #PWR?
+U 1 1 5F1AA8E9
+P 9500 7350
+F 0 "#PWR?" H 9500 7100 50  0001 C CNN
+F 1 "GND" H 9600 7250 50  0000 C CNN
+F 2 "" H 9500 7350 50  0001 C CNN
+F 3 "" H 9500 7350 50  0001 C CNN
+	1    9500 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 7250 9500 7350
+Text GLabel 9600 7000 2    50   Input ~ 0
+ADC_PWR
+Wire Wire Line
+	9600 7000 9500 7000
+Connection ~ 9500 7000
+Wire Wire Line
+	9500 7000 9500 7050
+Text GLabel 7600 5300 1    50   Input ~ 0
+PACK_ID
+$Comp
+L BMS:Conn_01x02 J?
+U 1 1 5F249FA8
+P 3550 1050
+F 0 "J?" H 3630 1042 50  0000 L CNN
+F 1 "Conn_01x02" H 3630 951 50  0000 L CNN
+F 2 "" H 3550 1050 50  0001 C CNN
+F 3 "" H 3550 1050 50  0001 C CNN
+	1    3550 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F24EF9E
+P 3200 950
+F 0 "#PWR?" H 3200 800 50  0001 C CNN
+F 1 "+5V" H 3215 1123 50  0000 C CNN
+F 2 "" H 3200 950 50  0001 C CNN
+F 3 "" H 3200 950 50  0001 C CNN
+	1    3200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F24F9F2
+P 3200 1200
+F 0 "#PWR?" H 3200 950 50  0001 C CNN
+F 1 "GND" H 3205 1027 50  0000 C CNN
+F 2 "" H 3200 1200 50  0001 C CNN
+F 3 "" H 3200 1200 50  0001 C CNN
+	1    3200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 950  3200 1050
+Wire Wire Line
+	3200 1050 3350 1050
+Wire Wire Line
+	3350 1150 3200 1150
+Wire Wire Line
+	3200 1150 3200 1200
+Text GLabel 7050 5300 1    50   Input ~ 0
+PWR+
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F326BD9
+P 7400 5300
+F 0 "#PWR?" H 7400 5150 50  0001 C CNN
+F 1 "+BATT" H 7400 5450 50  0000 C CNN
+F 2 "" H 7400 5300 50  0001 C CNN
+F 3 "" H 7400 5300 50  0001 C CNN
+	1    7400 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F328E25
+P 7200 5300
+F 0 "#PWR?" H 7200 5050 50  0001 C CNN
+F 1 "GND" H 7205 5127 50  0000 C CNN
+F 2 "" H 7200 5300 50  0001 C CNN
+F 3 "" H 7200 5300 50  0001 C CNN
+	1    7200 5300
+	-1   0    0    1   
+$EndComp
+Text GLabel 7600 6400 3    50   Input ~ 0
+PACK_ID
+Text GLabel 7050 6400 3    50   Input ~ 0
+PWR+
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F32C9B6
+P 7200 6400
+F 0 "#PWR?" H 7200 6250 50  0001 C CNN
+F 1 "+BATT" H 7200 6550 50  0000 C CNN
+F 2 "" H 7200 6400 50  0001 C CNN
+F 3 "" H 7200 6400 50  0001 C CNN
+	1    7200 6400
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F32C9BC
+P 7400 6400
+F 0 "#PWR?" H 7400 6150 50  0001 C CNN
+F 1 "GND" H 7405 6227 50  0000 C CNN
+F 2 "" H 7400 6400 50  0001 C CNN
+F 3 "" H 7400 6400 50  0001 C CNN
+	1    7400 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F3BD9FE
+P 7250 6000
+F 0 "J?" V 7350 5850 50  0000 L CNN
+F 1 "PACK_OUT" V 7350 6050 50  0000 L CNN
+F 2 "" H 7250 6000 50  0001 C CNN
+F 3 "~" H 7250 6000 50  0001 C CNN
+	1    7250 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F406CBA
+P 7350 5600
+F 0 "J?" V 7450 5450 50  0000 L CNN
+F 1 "PACK_IN" V 7450 5650 50  0000 L CNN
+F 2 "" H 7350 5600 50  0001 C CNN
+F 3 "~" H 7350 5600 50  0001 C CNN
+	1    7350 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 5300 7050 5350
+Wire Wire Line
+	7050 5350 7150 5350
+Wire Wire Line
+	7150 5350 7150 5400
+Wire Wire Line
+	7200 5300 7200 5350
+Wire Wire Line
+	7200 5350 7250 5350
+Wire Wire Line
+	7250 5350 7250 5400
+Wire Wire Line
+	7400 5300 7400 5350
+Wire Wire Line
+	7400 5350 7350 5350
+Wire Wire Line
+	7350 5350 7350 5400
+Wire Wire Line
+	7450 5400 7450 5350
+Wire Wire Line
+	7450 5350 7600 5350
+Wire Wire Line
+	7600 5350 7600 5300
+Wire Wire Line
+	7150 6200 7150 6250
+Wire Wire Line
+	7150 6250 7050 6250
+Wire Wire Line
+	7050 6250 7050 6400
+Wire Wire Line
+	7250 6200 7250 6300
+Wire Wire Line
+	7250 6300 7200 6300
+Wire Wire Line
+	7200 6300 7200 6400
+Wire Wire Line
+	7350 6300 7400 6300
+Wire Wire Line
+	7400 6300 7400 6400
+Wire Wire Line
+	7450 6200 7450 6250
+Wire Wire Line
+	7450 6250 7600 6250
+Wire Wire Line
+	7600 6250 7600 6400
+Wire Wire Line
+	7350 6200 7350 6300
 $EndSCHEMATC
