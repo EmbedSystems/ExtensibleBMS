@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LM5164
+D 600mA, 100V Step-Down Switching Regulator, PowerSO-8
+K Step-Down Switching Regulator High Voltage
+F http://www.ti.com/lit/ds/symlink/lm5017.pdf
+$ENDCMP
+#
 $CMP TPS560430
 D 2A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6
 K step-down dcdc voltage regulator
