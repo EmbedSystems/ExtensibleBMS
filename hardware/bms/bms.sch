@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bms-rescue:LSI94202-BMS U?
+L bms-rescue:LSI94202-BMS-bms-rescue U?
 U 1 1 5E42CB2D
 P 13000 5600
 F 0 "U?" H 12950 5700 50  0000 L CNN
@@ -73,7 +73,7 @@ OSC_IN
 Text GLabel 1400 6650 0    50   Input ~ 0
 OSC_OUT
 $Comp
-L bms-rescue:TPS560430-BMS U?
+L bms-rescue:TPS560430-BMS-bms-rescue U?
 U 1 1 5E454D22
 P 3100 1350
 F 0 "U?" H 3100 1717 50  0000 C CNN
@@ -302,7 +302,7 @@ CAN_STB
 Wire Wire Line
 	1400 6950 1750 6950
 $Comp
-L bms-rescue:USBLC6-2SC6-BMS U?
+L bms-rescue:USBLC6-2SC6-BMS-bms-rescue U?
 U 1 1 5E4A89B6
 P 1700 10300
 F 0 "U?" H 1700 10766 50  0000 C CNN
@@ -618,7 +618,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 10700 4750 10600
 $Comp
-L bms-rescue:Crystal-BMS Y?
+L bms-rescue:Crystal-BMS-bms-rescue Y?
 U 1 1 5E60121F
 P 2250 4300
 F 0 "Y?" H 2250 4525 50  0000 C CNN
@@ -1167,7 +1167,7 @@ F 3 "" H 6250 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L bms-rescue:JUMPER-BMS JP?
+L bms-rescue:JUMPER-BMS-bms-rescue JP?
 U 1 1 5E9F8394
 P 4250 9050
 F 0 "JP?" H 4250 9314 50  0000 C CNN
@@ -1210,7 +1210,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 9050 4850 9100
 $Comp
-L bms-rescue:Q_PMOS_GSD-BMS Q?
+L bms-rescue:Q_PMOS_GSD-BMS-bms-rescue Q?
 U 1 1 5EA725A8
 P 9000 1150
 F 0 "Q?" H 9205 1104 50  0000 L CNN
@@ -1331,7 +1331,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 1750 8900 1700
 $Comp
-L bms-rescue:Q_PMOS_GSD-BMS Q?
+L bms-rescue:Q_PMOS_GSD-BMS-bms-rescue Q?
 U 1 1 5EC5A053
 P 10750 1150
 F 0 "Q?" H 10955 1104 50  0000 L CNN
@@ -1452,7 +1452,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 1750 10650 1700
 $Comp
-L bms-rescue:Q_PMOS_GSD-BMS Q?
+L bms-rescue:Q_PMOS_GSD-BMS-bms-rescue Q?
 U 1 1 5EC68673
 P 12600 1150
 F 0 "Q?" H 12805 1104 50  0000 L CNN
@@ -2186,7 +2186,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 14550 2600 50  00
 	-1   0    0    -1  
 $EndComp
 $Comp
-L bms-rescue:JUMPER-BMS JP?
+L bms-rescue:JUMPER-BMS-bms-rescue JP?
 U 1 1 5E474F4B
 P 9100 3550
 F 0 "JP?" H 9100 3550 50  0000 C CNN
@@ -2197,7 +2197,7 @@ F 3 "" H 9100 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L bms-rescue:JUMPER-BMS JP?
+L bms-rescue:JUMPER-BMS-bms-rescue JP?
 U 1 1 5E475BC8
 P 9100 3700
 F 0 "JP?" H 9100 3700 50  0000 C CNN
@@ -2208,7 +2208,7 @@ F 3 "" H 9100 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L bms-rescue:JUMPER-BMS JP?
+L bms-rescue:JUMPER-BMS-bms-rescue JP?
 U 1 1 5E4767E4
 P 9100 3850
 F 0 "JP?" H 9100 3850 50  0000 C CNN
@@ -2259,7 +2259,7 @@ C2
 Text GLabel 8700 4000 0    50   Input ~ 0
 C3
 $Comp
-L bms-rescue:JUMPER-BMS JP?
+L bms-rescue:JUMPER-BMS-bms-rescue JP?
 U 1 1 5E476B2E
 P 9100 4000
 F 0 "JP?" H 9100 4000 50  0000 C CNN
@@ -2270,7 +2270,7 @@ F 3 "" H 9100 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L bms-rescue:JUMPER-BMS JP?
+L bms-rescue:JUMPER-BMS-bms-rescue JP?
 U 1 1 5E476E99
 P 9100 4150
 F 0 "JP?" H 9100 4150 50  0000 C CNN
@@ -2967,7 +2967,7 @@ Connection ~ 12250 7800
 Wire Wire Line
 	12250 7800 12000 7800
 $Comp
-L bms-rescue:Q_PMOS_GSD-BMS Q?
+L bms-rescue:Q_PMOS_GSD-BMS-bms-rescue Q?
 U 1 1 5FFFA185
 P 9750 7900
 F 0 "Q?" V 9650 7800 50  0000 L CNN
@@ -3652,7 +3652,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 6550 5450 6500
 $Comp
-L bms-rescue:Q_PMOS_GSD-BMS Q?
+L bms-rescue:Q_PMOS_GSD-BMS-bms-rescue Q?
 U 1 1 5E4FE228
 P 10650 9550
 F 0 "Q?" V 10550 9450 50  0000 L CNN
@@ -3833,11 +3833,9 @@ Connection ~ 5500 9600
 Wire Wire Line
 	5500 9600 5500 9500
 Wire Notes Line
-	8000 11050 8000 7450
+	7500 11050 7500 7450
 Wire Notes Line
-	8000 11050 11450 11050
-Text Notes 6800 5900 0    50   ~ 0
-Populate for Bottom Node only
+	7500 11050 11450 11050
 Text GLabel 10050 10400 0    50   Input ~ 0
 PWR-
 Wire Wire Line
@@ -3932,7 +3930,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm5017.pdf" H 7850 6500 50  0001 C CNN
 	1    7850 6500
 	1    0    0    -1  
 $EndComp
-Text GLabel 6950 6300 0    50   Input ~ 0
+Text GLabel 6400 6300 0    50   Input ~ 0
 PWR+
 Text GLabel 6950 7100 0    50   Input ~ 0
 PWR-
@@ -3962,9 +3960,6 @@ F 3 "~" H 7100 6700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 6550 7100 6300
-Connection ~ 7100 6300
-Wire Wire Line
-	7100 6300 6950 6300
 Wire Wire Line
 	7100 6850 7100 7100
 Connection ~ 7100 7100
@@ -4136,8 +4131,6 @@ Wire Wire Line
 Wire Wire Line
 	10750 6150 10750 6300
 Connection ~ 10200 6150
-Wire Wire Line
-	11000 6150 10750 6150
 Connection ~ 10750 6150
 $Comp
 L power:+5F #PWR?
@@ -4625,12 +4618,11 @@ Wire Wire Line
 	4600 5900 4700 5900
 Wire Wire Line
 	4900 5900 5000 5900
-Connection ~ 11000 6150
 Wire Wire Line
 	8550 9800 8600 9800
 Text GLabel 8550 9800 0    50   Input ~ 0
 LOAD-
-Text Notes 7700 4500 0    50   ~ 0
+Text Notes 7700 4500 0    50   ~ 10
 Populate for TOP Node only
 Text GLabel 8550 9350 0    50   Input ~ 0
 PWR-
@@ -4667,11 +4659,11 @@ F 3 "" H 8800 9250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	8000 7450 6600 7450
+	7500 7450 6100 7450
 Wire Notes Line
-	6600 5800 11450 5800
+	6100 5800 11450 5800
 Wire Notes Line
-	6600 5800 6600 7450
+	6100 5800 6100 7450
 Wire Notes Line
 	11450 5800 11450 11050
 Text GLabel 10800 7000 2    50   Input ~ 0
@@ -5151,6 +5143,27 @@ Text GLabel 1300 3400 0    50   Input ~ 0
 PWR_CTRL
 Wire Wire Line
 	1300 3400 1450 3400
-Text Notes 8150 7550 0    50   ~ 0
+Text Notes 7600 7550 0    50   ~ 0
 Note: LM5164DDAR has limit of 100V input\nin case the pack voltage exceeds 100V then \na provision is provided with external 5V (+5VF) input\nto wakeup the stm32 if it is powered down due to\nlow Battery
+Connection ~ 11000 6150
+Wire Wire Line
+	11000 6150 10750 6150
+$Comp
+L BMS:JUMPER JP?
+U 1 1 5E58BBD4
+P 6750 6300
+F 0 "JP?" H 6750 6564 50  0000 C CNN
+F 1 "PWR_3V3_ON" H 6750 6473 50  0000 C CNN
+F 2 "" H 6750 6300 50  0000 C CNN
+F 3 "" H 6750 6300 50  0000 C CNN
+	1    6750 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6300 6450 6300
+Wire Wire Line
+	7050 6300 7100 6300
+Connection ~ 7100 6300
+Text Notes 6150 5900 0    50   ~ 10
+Populate for Bottom Node only
 $EndSCHEMATC

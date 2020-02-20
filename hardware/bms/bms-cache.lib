@@ -723,11 +723,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# bms-rescue_Crystal-BMS
+# bms-rescue_Crystal-BMS-bms-rescue
 #
-DEF bms-rescue_Crystal-BMS Y 0 40 N N 1 F N
+DEF bms-rescue_Crystal-BMS-bms-rescue Y 0 40 N N 1 F N
 F0 "Y" 0 100 50 H V C CNN
-F1 "bms-rescue_Crystal-BMS" 0 -100 50 H V C CNN
+F1 "bms-rescue_Crystal-BMS-bms-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -742,11 +742,11 @@ X 2 2 100 0 50 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# bms-rescue_JUMPER-BMS
+# bms-rescue_JUMPER-BMS-bms-rescue
 #
-DEF bms-rescue_JUMPER-BMS JP 0 30 Y N 1 F N
+DEF bms-rescue_JUMPER-BMS-bms-rescue JP 0 30 Y N 1 F N
 F0 "JP" 0 150 50 H V C CNN
-F1 "bms-rescue_JUMPER-BMS" 0 -80 50 H V C CNN
+F1 "bms-rescue_JUMPER-BMS-bms-rescue" 0 -80 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -758,11 +758,11 @@ X 2 2 300 0 165 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# bms-rescue_LSI94202-BMS
+# bms-rescue_LSI94202-BMS-bms-rescue
 #
-DEF bms-rescue_LSI94202-BMS U 0 48 Y Y 1 F N
+DEF bms-rescue_LSI94202-BMS-bms-rescue U 0 48 Y Y 1 F N
 F0 "U" -350 0 50 H V C CNN
-F1 "bms-rescue_LSI94202-BMS" -350 0 50 H V C CNN
+F1 "bms-rescue_LSI94202-BMS-bms-rescue" -350 0 50 H V C CNN
 F2 "" -350 0 50 H I C CNN
 F3 "" -350 0 50 H I C CNN
 DRAW
@@ -819,11 +819,11 @@ X VC4 9 -1000 -250 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# bms-rescue_Q_PMOS_GSD-BMS
+# bms-rescue_Q_PMOS_GSD-BMS-bms-rescue
 #
-DEF bms-rescue_Q_PMOS_GSD-BMS Q 0 0 Y N 1 F N
+DEF bms-rescue_Q_PMOS_GSD-BMS-bms-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "bms-rescue_Q_PMOS_GSD-BMS" 200 -50 50 H V L CNN
+F1 "bms-rescue_Q_PMOS_GSD-BMS-bms-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -851,11 +851,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# bms-rescue_TPS560430-BMS
+# bms-rescue_TPS560430-BMS-bms-rescue
 #
-DEF bms-rescue_TPS560430-BMS U 0 10 Y Y 1 F N
+DEF bms-rescue_TPS560430-BMS-bms-rescue U 0 10 Y Y 1 F N
 F0 "U" -300 250 50 H V L CNN
-F1 "bms-rescue_TPS560430-BMS" -100 250 50 H V L CNN
+F1 "bms-rescue_TPS560430-BMS-bms-rescue" -100 250 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-6" 50 -250 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -872,11 +872,11 @@ X SW 6 400 50 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# bms-rescue_USBLC6-2SC6-BMS
+# bms-rescue_USBLC6-2SC6-BMS-bms-rescue
 #
-DEF bms-rescue_USBLC6-2SC6-BMS U 0 0 Y Y 1 F N
+DEF bms-rescue_USBLC6-2SC6-BMS-bms-rescue U 0 0 Y Y 1 F N
 F0 "U" 0 350 50 H V C CNN
-F1 "bms-rescue_USBLC6-2SC6-BMS" 0 -350 50 H V C CNN
+F1 "bms-rescue_USBLC6-2SC6-BMS-bms-rescue" 0 -350 50 H V C CNN
 F2 "TO_SOT_Packages_SMD:SOT-23-6" 0 -450 50 H I C CNN
 F3 "" -250 350 50 H I C CNN
 $FPLIST
