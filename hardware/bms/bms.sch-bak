@@ -2098,111 +2098,56 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 14550 2600 50  00
 	1    14550 2600
 	-1   0    0    1   
 $EndComp
-$Comp
-L bms-rescue:JUMPER-BMS-bms-rescue JP4
-U 1 1 5E474F4B
-P 9100 3550
-F 0 "JP4" H 9100 3550 50  0000 C CNN
-F 1 "JUMPER" H 9100 3723 50  0001 C CNN
-F 2 "" H 9100 3550 50  0001 C CNN
-F 3 "" H 9100 3550 50  0000 C CNN
-	1    9100 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L bms-rescue:JUMPER-BMS-bms-rescue JP5
-U 1 1 5E475BC8
-P 9100 3700
-F 0 "JP5" H 9100 3700 50  0000 C CNN
-F 1 "JUMPER" H 9100 3873 50  0001 C CNN
-F 2 "" H 9100 3700 50  0001 C CNN
-F 3 "" H 9100 3700 50  0000 C CNN
-	1    9100 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L bms-rescue:JUMPER-BMS-bms-rescue JP6
-U 1 1 5E4767E4
-P 9100 3850
-F 0 "JP6" H 9100 3850 50  0000 C CNN
-F 1 "JUMPER" H 9100 4023 50  0001 C CNN
-F 2 "" H 9100 3850 50  0001 C CNN
-F 3 "" H 9100 3850 50  0000 C CNN
-	1    9100 3850
-	1    0    0    -1  
-$EndComp
-Text GLabel 8700 3550 0    50   Input ~ 0
+Text GLabel 8500 3650 0    50   Input ~ 0
 C5
-Text GLabel 9500 3550 2    50   Input ~ 0
+Text GLabel 9200 3650 2    50   Input ~ 0
 C4
-Text GLabel 8700 3700 0    50   Input ~ 0
+Text GLabel 8500 3750 0    50   Input ~ 0
 C4
-Text GLabel 9500 3700 2    50   Input ~ 0
+Text GLabel 9200 3750 2    50   Input ~ 0
 C3
-Text GLabel 8700 3850 0    50   Input ~ 0
+Text GLabel 8500 3850 0    50   Input ~ 0
 C6
-Text GLabel 9500 3850 2    50   Input ~ 0
+Text GLabel 9200 3850 2    50   Input ~ 0
 C5
-Text Notes 9650 3600 0    50   ~ 0
+Text Notes 9350 3700 0    50   ~ 0
 <= 7 Cells
-Text Notes 9650 3750 0    50   ~ 0
+Text Notes 9350 3800 0    50   ~ 0
 <= 6 Cells
-Text Notes 9650 3900 0    50   ~ 0
+Text Notes 9350 3900 0    50   ~ 0
 <= 5 Cells
 Wire Wire Line
-	8700 3550 8800 3550
+	8500 3650 8600 3650
 Wire Wire Line
-	9400 3550 9500 3550
+	9100 3650 9200 3650
 Wire Wire Line
-	9400 3700 9500 3700
+	9100 3750 9200 3750
 Wire Wire Line
-	8700 3700 8800 3700
+	8500 3750 8600 3750
 Wire Wire Line
-	8700 3850 8800 3850
+	8500 3850 8600 3850
 Wire Wire Line
-	9400 3850 9500 3850
+	9100 3850 9200 3850
 Wire Wire Line
-	9400 4000 9500 4000
+	9100 3950 9200 3950
 Wire Wire Line
-	8700 4000 8800 4000
-Text Notes 9650 4050 0    50   ~ 0
+	8500 3950 8600 3950
+Text Notes 9350 4000 0    50   ~ 0
 <= 4 Cells
-Text GLabel 9500 4000 2    50   Input ~ 0
+Text GLabel 9200 3950 2    50   Input ~ 0
 C2
-Text GLabel 8700 4000 0    50   Input ~ 0
+Text GLabel 8500 3950 0    50   Input ~ 0
 C3
-$Comp
-L bms-rescue:JUMPER-BMS-bms-rescue JP7
-U 1 1 5E476B2E
-P 9100 4000
-F 0 "JP7" H 9100 4000 50  0000 C CNN
-F 1 "JUMPER" H 9100 4173 50  0001 C CNN
-F 2 "" H 9100 4000 50  0001 C CNN
-F 3 "" H 9100 4000 50  0000 C CNN
-	1    9100 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L bms-rescue:JUMPER-BMS-bms-rescue JP8
-U 1 1 5E476E99
-P 9100 4150
-F 0 "JP8" H 9100 4150 50  0000 C CNN
-F 1 "JUMPER" H 9100 4323 50  0001 C CNN
-F 2 "" H 9100 4150 50  0001 C CNN
-F 3 "" H 9100 4150 50  0000 C CNN
-	1    9100 4150
-	1    0    0    -1  
-$EndComp
-Text GLabel 8700 4150 0    50   Input ~ 0
+Text GLabel 8500 4050 0    50   Input ~ 0
 C7
-Text GLabel 9500 4150 2    50   Input ~ 0
+Text GLabel 9200 4050 2    50   Input ~ 0
 C6
-Text Notes 9650 4200 0    50   ~ 0
+Text Notes 9350 4100 0    50   ~ 0
 == 3 Cells
 Wire Wire Line
-	8700 4150 8800 4150
+	8500 4050 8600 4050
 Wire Wire Line
-	9400 4150 9500 4150
+	9100 4050 9200 4050
 Text GLabel 11950 5050 0    50   Input ~ 0
 VC8
 Text GLabel 11950 5150 0    50   Input ~ 0
@@ -2847,17 +2792,6 @@ Connection ~ 12250 7800
 Wire Wire Line
 	12250 7800 12000 7800
 $Comp
-L bms-rescue:Q_PMOS_GSD-BMS-bms-rescue Q5
-U 1 1 5FFFA185
-P 9750 7900
-F 0 "Q5" V 9650 7800 50  0000 L CNN
-F 1 "Q_PMOS_GSD" V 9950 7600 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9950 8000 50  0001 C CNN
-F 3 "" H 9750 7900 50  0001 C CNN
-	1    9750 7900
-	0    1    -1   0   
-$EndComp
-$Comp
 L Transistor_BJT:BC817 Q1
 U 1 1 6002F752
 P 8700 8050
@@ -3115,7 +3049,7 @@ U 1 1 5E86EE3B
 P 11550 3900
 F 0 "J13" H 11630 3892 50  0000 L CNN
 F 1 "Conn_01x10" H 11630 3801 50  0001 L CNN
-F 2 "" H 11550 3900 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-10A_1x10_P2.54mm_Vertical" H 11550 3900 50  0001 C CNN
 F 3 "~" H 11550 3900 50  0001 C CNN
 	1    11550 3900
 	1    0    0    1   
@@ -3497,17 +3431,6 @@ Wire Wire Line
 	5450 7050 5450 7100
 Wire Wire Line
 	5450 6550 5450 6500
-$Comp
-L bms-rescue:Q_PMOS_GSD-BMS-bms-rescue Q7
-U 1 1 5E4FE228
-P 10650 9550
-F 0 "Q7" V 10550 9450 50  0000 L CNN
-F 1 "Q_PMOS_GSD" V 10850 9250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10850 9650 50  0001 C CNN
-F 3 "" H 10650 9550 50  0001 C CNN
-	1    10650 9550
-	0    1    -1   0   
-$EndComp
 $Comp
 L Transistor_BJT:BC847 Q6
 U 1 1 5E4FFE2F
@@ -5190,4 +5113,125 @@ Wire Wire Line
 	7650 5450 7650 5500
 Text Notes 8650 5550 0    50   ~ 0
 BOOT_SEL
+$Comp
+L Transistor_FET:IRF9540N Q5
+U 1 1 5E595FDE
+P 9750 7900
+F 0 "Q5" V 10092 7900 50  0000 C CNN
+F 1 "IRF9540N" V 10001 7900 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9950 7825 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 9750 7900 50  0001 L CNN
+	1    9750 7900
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRF9540N Q7
+U 1 1 5E6A0930
+P 10650 9550
+F 0 "Q7" V 10992 9550 50  0000 C CNN
+F 1 "IRF9540N" V 10901 9550 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 10850 9475 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 10650 9550 50  0001 L CNN
+	1    10650 9550
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J16
+U 1 1 5ECACAC0
+P 8800 3850
+F 0 "J16" H 8850 4267 50  0000 C CNN
+F 1 "Cell Bypass" H 8850 4176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8800 3850 50  0001 C CNN
+F 3 "~" H 8800 3850 50  0001 C CNN
+	1    8800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole M1
+U 1 1 5EF693DA
+P 5150 2700
+F 0 "M1" H 5100 2800 50  0000 L CNN
+F 1 "MountingHole" H 5250 2655 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5150 2700 50  0001 C CNN
+F 3 "~" H 5150 2700 50  0001 C CNN
+	1    5150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole M2
+U 1 1 5EF6C9BC
+P 5350 2700
+F 0 "M2" H 5300 2800 50  0000 L CNN
+F 1 "MountingHole" H 5450 2655 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5350 2700 50  0001 C CNN
+F 3 "~" H 5350 2700 50  0001 C CNN
+	1    5350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole M3
+U 1 1 5EF6CEFA
+P 5550 2700
+F 0 "M3" H 5500 2800 50  0000 L CNN
+F 1 "MountingHole" H 5650 2655 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5550 2700 50  0001 C CNN
+F 3 "~" H 5550 2700 50  0001 C CNN
+	1    5550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole M4
+U 1 1 5EF6D459
+P 5750 2700
+F 0 "M4" H 5700 2800 50  0000 L CNN
+F 1 "MountingHole" H 5850 2655 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5750 2700 50  0001 C CNN
+F 3 "~" H 5750 2700 50  0001 C CNN
+	1    5750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole M5
+U 1 1 5EF6DA01
+P 5950 2700
+F 0 "M5" H 5900 2800 50  0000 L CNN
+F 1 "MountingHole" H 6050 2655 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5950 2700 50  0001 C CNN
+F 3 "~" H 5950 2700 50  0001 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole M6
+U 1 1 5EF6DF70
+P 6150 2700
+F 0 "M6" H 6100 2800 50  0000 L CNN
+F 1 "MountingHole" H 6250 2655 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6150 2700 50  0001 C CNN
+F 3 "~" H 6150 2700 50  0001 C CNN
+	1    6150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole Fd1
+U 1 1 5EF6E53E
+P 5150 3100
+F 0 "Fd1" H 5100 3200 50  0000 L CNN
+F 1 "MountingHole" H 5250 3055 50  0001 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 5150 3100 50  0001 C CNN
+F 3 "~" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole Fd2
+U 1 1 5EF6EB37
+P 5350 3100
+F 0 "Fd2" H 5300 3200 50  0000 L CNN
+F 1 "MountingHole" H 5450 3055 50  0001 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 5350 3100 50  0001 C CNN
+F 3 "~" H 5350 3100 50  0001 C CNN
+	1    5350 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
