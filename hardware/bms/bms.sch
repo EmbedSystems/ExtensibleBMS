@@ -1081,22 +1081,22 @@ Wire Wire Line
 $Comp
 L Device:R_Small R25
 U 1 1 5E91A3BE
-P 8600 10400
-F 0 "R25" V 8600 10400 50  0000 C CNN
-F 1 "120E" V 8550 10250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8600 10400 50  0001 C CNN
-F 3 "~" H 8600 10400 50  0001 C CNN
-	1    8600 10400
+P 4650 9100
+F 0 "R25" V 4650 9100 50  0000 C CNN
+F 1 "120E" V 4600 8950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4650 9100 50  0001 C CNN
+F 3 "~" H 4650 9100 50  0001 C CNN
+	1    4650 9100
 	0    1    1    0   
 $EndComp
-Text GLabel 8400 10400 0    50   Input ~ 0
+Text GLabel 4450 9100 0    50   Input ~ 0
 Data_H_A
-Text GLabel 8850 10400 2    50   Input ~ 0
+Text GLabel 4900 9100 2    50   Input ~ 0
 Data_L_B
 Wire Wire Line
-	8400 10400 8500 10400
+	4450 9100 4550 9100
 Wire Wire Line
-	8700 10400 8850 10400
+	4750 9100 4900 9100
 Text GLabel 5000 8450 0    50   Input ~ 0
 U2TX
 Text GLabel 5000 8150 0    50   Input ~ 0
@@ -3190,26 +3190,26 @@ Wire Wire Line
 $Comp
 L power:+BATT #PWR0144
 U 1 1 5F326BD9
-P 6250 4600
-F 0 "#PWR0144" H 6250 4450 50  0001 C CNN
-F 1 "+BATT" H 6184 4725 50  0000 C CNN
-F 2 "" H 6250 4600 50  0001 C CNN
-F 3 "" H 6250 4600 50  0001 C CNN
-	1    6250 4600
+P 6500 4650
+F 0 "#PWR0144" H 6500 4500 50  0001 C CNN
+F 1 "+BATT" H 6434 4775 50  0000 C CNN
+F 2 "" H 6500 4650 50  0001 C CNN
+F 3 "" H 6500 4650 50  0001 C CNN
+	1    6500 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 5100 6350 5150
-Text GLabel 5900 5154 3    50   Input ~ 0
+	6600 5150 6600 5200
+Text GLabel 5550 5204 3    50   Input ~ 0
 Data_H_A
-Text GLabel 6000 5150 3    50   Input ~ 0
+Text GLabel 5650 5200 3    50   Input ~ 0
 Data_L_B
 Connection ~ 12000 7500
 Text GLabel 1400 8450 0    50   Input ~ 0
 PWR_CTRL
 Wire Wire Line
 	1400 8450 1750 8450
-Text GLabel 5700 5150 3    50   Input ~ 0
+Text GLabel 5350 5200 3    50   Input ~ 0
 PWR_CRTL
 Text GLabel 6750 9550 2    50   Input ~ 0
 Data_H_A
@@ -3530,56 +3530,56 @@ CHG_CTRL
 Wire Wire Line
 	9550 10150 9600 10150
 Wire Wire Line
-	6250 4600 6250 4550
+	6500 4650 6500 4600
 Wire Wire Line
-	6350 4500 6350 4550
+	6600 4550 6600 4600
 Wire Wire Line
-	6250 5200 6250 5150
-Text GLabel 6000 4500 1    50   Input ~ 0
+	6500 5250 6500 5200
+Text GLabel 5650 4550 1    50   Input ~ 0
 Data_L_B
-Text GLabel 5900 4500 1    50   Input ~ 0
+Text GLabel 5550 4550 1    50   Input ~ 0
 Data_H_A
-Text GLabel 6350 4500 1    50   Input ~ 0
+Text GLabel 6600 4550 1    50   Input ~ 0
 CHG
 $Comp
 L power:GND #PWR0147
 U 1 1 5E739987
-P 6250 5200
-F 0 "#PWR0147" H 6250 4950 50  0001 C CNN
-F 1 "GND" H 6200 5050 50  0000 C CNN
-F 2 "" H 6250 5200 50  0001 C CNN
-F 3 "" H 6250 5200 50  0001 C CNN
-	1    6250 5200
+P 6500 5250
+F 0 "#PWR0147" H 6500 5000 50  0001 C CNN
+F 1 "GND" H 6450 5100 50  0000 C CNN
+F 2 "" H 6500 5250 50  0001 C CNN
+F 3 "" H 6500 5250 50  0001 C CNN
+	1    6500 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 5E7A8731
-P 5900 4750
-F 0 "J5" V 6150 4850 50  0000 L CNN
-F 1 "Conn_01x04" H 5980 4651 50  0001 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5900 4750 50  0001 C CNN
-F 3 "~" H 5900 4750 50  0001 C CNN
-	1    5900 4750
+P 5550 4800
+F 0 "J5" V 5800 4900 50  0000 L CNN
+F 1 "Conn_01x04" H 5630 4701 50  0001 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5550 4800 50  0001 C CNN
+F 3 "~" H 5550 4800 50  0001 C CNN
+	1    5550 4800
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J6
 U 1 1 5E96F1D5
-P 5900 4900
-F 0 "J6" V 6150 5000 50  0000 L CNN
-F 1 "Conn_01x04" H 5980 4801 50  0001 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5900 4900 50  0001 C CNN
-F 3 "~" H 5900 4900 50  0001 C CNN
-	1    5900 4900
+P 5550 4950
+F 0 "J6" V 5800 5050 50  0000 L CNN
+F 1 "Conn_01x04" H 5630 4851 50  0001 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5550 4950 50  0001 C CNN
+F 3 "~" H 5550 4950 50  0001 C CNN
+	1    5550 4950
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	5900 4500 5900 4550
+	5550 4550 5550 4600
 Wire Wire Line
-	6000 4500 6000 4550
+	5650 4550 5650 4600
 Wire Wire Line
-	5900 5100 5900 5154
+	5550 5150 5550 5204
 $Comp
 L Interface_UART:MAX485E U5
 U 1 1 5E9405E0
@@ -3673,17 +3673,17 @@ Wire Wire Line
 	8550 10800 8500 10800
 Text GLabel 10150 8700 2    50   Input ~ 0
 PWR-
-Text GLabel 6850 4500 1    50   Input ~ 0
+Text GLabel 6100 4550 1    50   Input ~ 0
 PWR+
-Text GLabel 6450 4500 1    50   Input ~ 0
+Text GLabel 5900 4550 1    50   Input ~ 0
 LOAD+
 Wire Wire Line
-	6450 4500 6450 4550
+	5900 4550 5900 4600
 Wire Wire Line
-	6450 5100 6450 5150
-Text GLabel 6450 5150 3    50   Input ~ 0
+	5900 5150 5900 5200
+Text GLabel 5900 5200 3    50   Input ~ 0
 LOAD+
-Text GLabel 6850 5150 3    50   Input ~ 0
+Text GLabel 6100 5200 3    50   Input ~ 0
 PWR+
 $Comp
 L BMS:LM5164 U6
@@ -3925,29 +3925,29 @@ Wire Wire Line
 $Comp
 L BMS:Conn_01x02 J9
 U 1 1 6179076C
-P 6850 4750
-F 0 "J9" V 6814 4821 50  0000 L CNN
-F 1 "Conn_01x02" H 6930 4651 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6850 4750 50  0001 C CNN
-F 3 "" H 6850 4750 50  0001 C CNN
-	1    6850 4750
+P 6600 4800
+F 0 "J9" V 6564 4871 50  0000 L CNN
+F 1 "Conn_01x02" H 6680 4701 50  0001 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 4800 50  0001 C CNN
+F 3 "" H 6600 4800 50  0001 C CNN
+	1    6600 4800
 	0    1    1    0   
 $EndComp
 $Comp
 L BMS:Conn_01x02 J10
 U 1 1 61790D23
-P 6850 4900
-F 0 "J10" V 6850 4960 50  0000 L CNN
-F 1 "Conn_01x02" H 6930 4801 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6850 4900 50  0001 C CNN
-F 3 "" H 6850 4900 50  0001 C CNN
-	1    6850 4900
+P 6600 4950
+F 0 "J10" V 6600 5010 50  0000 L CNN
+F 1 "Conn_01x02" H 6680 4851 50  0001 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 4950 50  0001 C CNN
+F 3 "" H 6600 4950 50  0001 C CNN
+	1    6600 4950
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6850 4550 6850 4500
+	6100 4600 6100 4550
 Wire Wire Line
-	6850 5100 6850 5150
+	6100 5150 6100 5200
 Wire Wire Line
 	12000 7450 12000 7500
 $Comp
@@ -3963,9 +3963,9 @@ F 3 "" H 14200 9600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14200 9600 14200 9650
-Text Notes 6900 4600 0    50   ~ 0
+Text Notes 5750 4250 0    39   ~ 0
 PWR+ Source:\nTOP node
-Text Notes 6700 5600 0    50   ~ 0
+Text Notes 5800 5650 0    39   ~ 0
 PCHG Source:\nBottom node
 Wire Wire Line
 	10050 8700 10150 8700
@@ -4520,63 +4520,41 @@ Wire Wire Line
 Connection ~ 1050 1850
 Wire Wire Line
 	10900 8400 10950 8400
-Text GLabel 6750 4500 1    50   Input ~ 0
+Text GLabel 6000 4550 1    50   Input ~ 0
 PCHG
-Text GLabel 6750 5150 3    50   Input ~ 0
+Text GLabel 6000 5200 3    50   Input ~ 0
 PCHG
 Wire Wire Line
-	6750 4500 6750 4550
+	6000 4550 6000 4600
 Wire Wire Line
-	6750 5100 6750 5150
+	6000 5150 6000 5200
 Text Notes 8300 9150 0    50   ~ 0
 Pack charging
 Text Notes 8250 9950 0    50   ~ 0
 Pack discharging
-$Comp
-L Connector_Generic:Conn_01x03 J7
-U 1 1 5F75BC62
-P 6350 4750
-F 0 "J7" V 6268 4930 50  0000 L CNN
-F 1 "Conn_01x03" V 6313 4930 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 6350 4750 50  0001 C CNN
-F 3 "~" H 6350 4750 50  0001 C CNN
-	1    6350 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J8
-U 1 1 5F7CDFE8
-P 6350 4900
-F 0 "J8" V 6268 5080 50  0000 L CNN
-F 1 "Conn_01x03" V 6223 5080 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 6350 4900 50  0001 C CNN
-F 3 "~" H 6350 4900 50  0001 C CNN
-	1    6350 4900
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
-	6350 5150 6250 5150
-Connection ~ 6250 5150
+	6600 5200 6500 5200
+Connection ~ 6500 5200
 Wire Wire Line
-	6250 5150 6250 5100
-Text Notes 6500 4100 0    50   ~ 0
-Series stacking connectors
+	6500 5200 6500 5150
+Text Notes 6500 4150 0    39   ~ 0
+Stacking connectors\n1) J5, J6, J7, J8: Series only\n2) J9, J10: Series/Parallel
 Wire Wire Line
-	5700 4500 5700 4550
-Text GLabel 5700 4500 1    50   Input ~ 0
+	5350 4550 5350 4600
+Text GLabel 5350 4550 1    50   Input ~ 0
 PWR_CRTL
 Wire Notes Line
-	5350 4000 7550 4000
+	4950 3950 7400 3950
 Wire Notes Line
-	7550 4000 7550 5750
+	7400 3950 7400 5700
 Wire Notes Line
-	7550 5750 5350 5750
+	7400 5700 4950 5700
 Wire Notes Line
-	5350 5750 5350 4000
+	4950 5700 4950 3950
 Wire Wire Line
-	5700 5100 5700 5150
+	5350 5150 5350 5200
 Wire Wire Line
-	6000 5100 6000 5150
+	5650 5150 5650 5200
 Wire Wire Line
 	1100 4800 1100 4750
 Wire Wire Line
@@ -5247,4 +5225,29 @@ Wire Wire Line
 Wire Wire Line
 	8750 7800 8800 7800
 Connection ~ 8800 7800
+NoConn ~ 8250 6800
+Text Notes 6400 5650 0    39   ~ 0
+J9, J10 Connections:\n1) Series: add the pack voltage\n2) Parallel: add pack current
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5F7CDFE8
+P 6000 4950
+F 0 "J8" V 5918 5130 50  0000 L CNN
+F 1 "Conn_01x03" V 5873 5130 50  0001 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 6000 4950 50  0001 C CNN
+F 3 "~" H 6000 4950 50  0001 C CNN
+	1    6000 4950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5F75BC62
+P 6000 4800
+F 0 "J7" V 5918 4980 50  0000 L CNN
+F 1 "Conn_01x03" V 5963 4980 50  0001 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 6000 4800 50  0001 C CNN
+F 3 "~" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
