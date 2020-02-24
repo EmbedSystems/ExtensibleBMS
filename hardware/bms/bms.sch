@@ -2977,11 +2977,8 @@ F 3 "~" H 9900 9050 50  0001 C CNN
 $EndComp
 Text GLabel 9550 9050 0    50   Input ~ 0
 PWM
-Text GLabel 8700 7800 0    50   Input ~ 0
+Text GLabel 8050 7800 0    50   Input ~ 0
 PWR+
-Wire Wire Line
-	8700 7800 8800 7800
-Connection ~ 8800 7800
 Text GLabel 11100 7400 0    50   Input ~ 0
 PWR_OUT
 Wire Wire Line
@@ -5234,4 +5231,20 @@ F 3 "~" H 3200 2450 50  0001 C CNN
 	1    3200 2450
 	1    0    0    -1  
 $EndComp
+$Comp
+L BMS:JUMPER JP4
+U 1 1 5E65E9A2
+P 8450 7800
+F 0 "JP4" H 8450 8064 50  0000 C CNN
+F 1 "PWR_EN" H 8450 7973 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8450 7800 50  0001 C CNN
+F 3 "" H 8450 7800 50  0000 C CNN
+	1    8450 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 7800 8150 7800
+Wire Wire Line
+	8750 7800 8800 7800
+Connection ~ 8800 7800
 $EndSCHEMATC
